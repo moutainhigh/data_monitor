@@ -1,0 +1,19 @@
+rthink:
+  neo4j: ##neo4j
+    url: bolt://116.62.210.212:7687
+    username: neo4j
+    password: rthink
+      
+  influxdb: ## influxdb
+    url: http://116.62.210.212:8086
+    username: mainflux
+    password: mainflux
+    database: mainflux
+    retention-policy: autogen
+    connect-timeout: 5
+    read-timeout: 5
+    write-timeout: 5
+    gzip: false
+    
+    graphql:
+      url: http://127.0.0.1:4001/api
